@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="SpaceFlightNewsAPI.Main_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpaceFlightNewsAPI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Border BorderThickness="1" BorderBrush="Brown">
+        <Grid>
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="DeviceStates">
+                    <VisualState x:Name="DesktopMode">
+
+
+                    </VisualState>
+                    <VisualState x:Name="TabletMode">
+
+                        <VisualState.Setters>
+                            <Setter Target="apiDescriptionTextBlock.Visibility" Value="Collapsed"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontWeight="ExtraBlack" HorizontalTextAlignment="Center" Text="List of API and its Description"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition   Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- List of APIs -->
+                    <ListView x:Name="apiListView" SelectedItem="{Binding SelectedAPI,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" SelectionChanged="apiListView_SelectionChanged"  ItemsSource="{Binding APIColection}"  DisplayMemberPath="API" Grid.Column="0" >
+
+                    </ListView>
+
+                    <!-- API Description -->
+                    <TextBlock VerticalAlignment="Center" x:Name="apiDescriptionTextBlock"  Grid.Column="1"  Style="{ThemeResource BodyTextBlockStyle}" TextAlignment="Center" HorizontalAlignment="Stretch" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+
+</Page>

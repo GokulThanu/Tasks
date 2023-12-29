@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///D:/New folder (2)/APIList (Package).appinstaller"
+	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="03ee5958-d88f-4d7a-84d8-ed7bcae28116"
+		Version="1.0.0.0"
+		Publisher="CN=gokul"
+		Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/APIList (Package)_1.0.0.0_x86_x64_Debug.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.WindowsAppRuntime.1.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x86/Microsoft.WindowsAppRuntime.1.4.msix"
+			Version="4000.986.611.0" />
+		<Package
+			Name="Microsoft.WindowsAppRuntime.1.4"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.4.msix"
+			Version="4000.986.611.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x64/Microsoft.VCLibs.x64.Debug.14.00.appx"
+			Version="14.0.30704.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x86/Microsoft.VCLibs.x86.Debug.14.00.appx"
+			Version="14.0.30704.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug.UWPDesktop"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x64/Microsoft.VCLibs.x64.Debug.14.00.Desktop.appx"
+			Version="14.0.30704.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.Debug.UWPDesktop"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file:///D:/New folder (2)/APIList (Package)_1.0.0.0_Debug_Test/Dependencies/x86/Microsoft.VCLibs.x86.Debug.14.00.Desktop.appx"
+			Version="14.0.30704.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="24" />
+	</UpdateSettings>
+</AppInstaller>

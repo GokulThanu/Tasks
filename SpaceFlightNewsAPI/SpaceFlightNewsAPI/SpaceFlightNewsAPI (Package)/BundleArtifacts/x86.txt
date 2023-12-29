@@ -1,0 +1,2 @@
+MainPackage=D:\task\SpaceFlightNewsAPI\SpaceFlightNewsAPI\SpaceFlightNewsAPI (Package)\bin\x86\Debug\APIList (Package)_1.0.0.0_x86_Debug.msix
+SymbolPackage=D:\task\SpaceFlightNewsAPI\SpaceFlightNewsAPI\SpaceFlightNewsAPI (Package)\obj\x86\Debug\Symbols\APIList (Package)_1.0.0.0_x86_Debug.appxsym
